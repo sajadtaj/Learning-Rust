@@ -4,7 +4,7 @@
 // طول ارایه مشخص است و از قبل تعیین شده
 // همه عناصر ارایه باید از یک نوع باشند
 
-//let array_name: [Type; size] = [element0, element1, ...];
+// let array_name: [Type; size] = [element0, element1, ...];
 
 // let a:[i32;5] = [12,23,32,1,3];
 // let data = [21,23,43,12,23,44,5,68]
@@ -71,7 +71,7 @@ fn tuple_function(){
     let t1 :(i32,char,bool,f64);
     t1 =(33,'s',true,99.88);
     
-    let t2 = (21,22222222,"iran",-9.89,false);
+    let _t2 = (21,22222222,"iran",-9.89,false);
 
     println!("Tuple");
     println!("{}",t1.2);

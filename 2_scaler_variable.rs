@@ -100,9 +100,10 @@
 
 fn main(){
     let a = 'e';
+    let x = "Iran";
     let b = '1';
     let c = '‌';    //  نیم‌فاصله
     let d = 'پ';
     let e = '👀';
-    println!("{} {} {}{}{} {} ", a, b, d, c, d, e);
+    println!("{} {} {}{}{} {} {} ", a,x, b, d, c, d, e);
 }
