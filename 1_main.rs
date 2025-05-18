@@ -1,6 +1,6 @@
-// immutable |define in Function | just one time set value | can value from function
-// mutable   |define in Function | every time can set value | can value from function
-// const     | define in every where |just one time set value | can not value from function
+// immutable |define in Function    | just one time set value  | can value from function
+// mutable   |define in Function    | every time can set value | can value from function
+// const     |define in every where | just one time set value   | can not value from function
 
 
 const BUFFER_SIZE: i32 = 10; //const

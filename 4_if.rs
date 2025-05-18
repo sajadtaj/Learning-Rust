@@ -1,9 +1,5 @@
-
-
 // شرط می تواند خارج از پرانتز باشد
 // حتما بایذ عبارت شرط از نوع بولین باشد
-
-
 
 
 fn main(){
@@ -17,6 +13,10 @@ fn main(){
 
     println!("conditon 3");
     con3();
+    println!("******");
+
+    println!("conditon 4");
+    con4();
     println!("******");
 
 }
@@ -75,13 +75,23 @@ fn con3(){
     else{
         23                     // a = 23
     };
+
+    // خق
+    // let a :i32 = if user == "iran"{44} else{23};
+    
     println!("a = {}",a);
 }
 
 // بعد از else 
 // ; 
 // گذاشتیم چون جایست که مقدار دهی به متغیر تمام شده
-
 // دربدنه برای مقدار دهی 
 // ; 
 //نگذاشته ایم 
+
+
+fn con4(){
+    let name  = "sajad";
+    let price:u64 = if name =="dara"{0} else if name =="ali" {1} else if name =="sajad"{1999999999999} else {1};
+    println!("{}",price);
+}

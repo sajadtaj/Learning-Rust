@@ -17,9 +17,9 @@
 fn main(){
     let month :[&str; 12] = [
             "فروردین", "اردیبهشت", "خرداد",
-            "تیر", "مرداد", "شهریور",
-            "مهر", "آبان", "آذر",
-            "دی", "بهمن", "اسفند"
+            "تیر",     "مرداد",    "شهریور",
+            "مهر",     "آبان",     "آذر",
+            "دی",      "بهمن",     "اسفند"
             ];
 
     let first= month[0];
@@ -33,6 +33,9 @@ fn main(){
     println!("{:?}",month);     // نمایش کل آرایه
 
 
+    let [q,w,e,r,t,y,u,i,o,p,a,s]=month;
+    println!("{} {} {} {} {} {} {} {} {} {} {} {} ",q,w,e,r,t,y,u,i,o,p,a,s);
+    println!("{:?}",[q,w,e,r,t,y,u,i,o,p,a,s]);
     println!("------------");
     function_range();
 
@@ -56,6 +59,7 @@ fn function_range() {
     println!("x is: {:?}", x);
 
     println!("my array is: {:?}", [10i8;10]);
+    println!("My array is : {:?}",[1.0009f32;4]);
 }
 
 //---------------------------------------------------
@@ -78,7 +82,8 @@ fn tuple_function(){
     println!("{:?}",t1);
 
     let tup = (1, true, "سلام", 9.99);
-    let (x, y, v, z) = tup;
+
+    let (x, y, v, z) = tup;  // set tup to -> x,y,v,z
     println!("x: {}, y: {}, v: {}, z: {}", x, y, v, z);
 
 }

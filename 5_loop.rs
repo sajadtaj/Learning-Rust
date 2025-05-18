@@ -23,6 +23,11 @@ fn main(){
     for_test_3();
     println!("-------");
 
+
+    println!("Practice 2");
+    for_test_4();
+    println!("-------");
+
 }
 
 //---------------------------------------------------
@@ -101,10 +106,15 @@ fn for_test_2(){
         println!("i is : {}",i);
     }
 
+    // NEW
+    for (index, value) in a.iter().enumerate(){
+        println!("index:{} | Value:{}",index, value);
+    }
+
 }
 
 //---------------------------------------------------
-//                    for on Array
+//                    Practice
 //---------------------------------------------------
 fn for_test_3(){
     println!("");
@@ -129,4 +139,21 @@ fn for_test_3(){
     }
 
     
+}
+
+fn for_test_4(){
+    // println!("{}","**".repeat(18));
+    let mut counter =6;
+    for i in  1..counter{
+        let mut space = counter - i;
+        print!("{}"," ".repeat(space));
+        print!("{}","*".repeat(i));
+        println!("");
+    }
+    for i in  1..counter{
+        let mut repeat = counter -i;
+        print!("{}"," ".repeat(i));
+        print!("{}","*".repeat(repeat));
+        println!("");
+    }
 }
